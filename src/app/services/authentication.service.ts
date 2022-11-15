@@ -10,7 +10,7 @@ export class AuthenticationService {
 
   login(email: string, password: string) {
     return this.http
-      .post<any>('localhost:3010/users/login', { email, password })
+      .post<any>('http://localhost:3010/v1/users/login', { email, password })
       .pipe(
         map((token) => {
           console.log('token' + token.access_token);
