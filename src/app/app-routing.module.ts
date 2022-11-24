@@ -17,6 +17,16 @@ const routes: Routes = [
     path: 'register',
     component: RegisterComponent,
   },
+  {
+    path: 'entrance',
+    loadChildren: () =>
+      import('./entrance/entrance.module').then((m) => m.EntranceModule),
+  },
+  {
+    path: '**',
+    redirectTo: 'entrance',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
