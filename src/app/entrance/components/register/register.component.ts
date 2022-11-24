@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { tap } from 'rxjs/operators';
-import { UserService } from 'src/app/services/user-service/user-service.service';
+import { UserService } from 'src/app/entrance/user-service/user-service.service';
 import { CustomValidators } from './custom-validators';
 
 @Component({
