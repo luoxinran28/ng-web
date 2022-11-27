@@ -5,19 +5,6 @@ import { RegisterComponent } from './entrance/components/register/register.compo
 
 const routes: Routes = [
   {
-    path: 'admin',
-    loadChildren: () =>
-      import('./admin/admin.module').then((m) => m.AdminModule),
-  },
-  {
-    path: 'login',
-    component: LoginComponent,
-  },
-  {
-    path: 'register',
-    component: RegisterComponent,
-  },
-  {
     path: 'entrance',
     loadChildren: () =>
       import('./entrance/entrance.module').then((m) => m.EntranceModule),
