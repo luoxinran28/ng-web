@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './entrance/components/login/login.component';
-import { RegisterComponent } from './entrance/components/register/register.component';
 
 const routes: Routes = [
   {
     path: 'entrance',
     loadChildren: () =>
       import('./entrance/entrance.module').then((m) => m.EntranceModule),
+  },
+  {
+    path: 'lobby',
+    loadChildren: () =>
+      import('./lobby/lobby.module').then((m) => m.LobbyModule),
   },
   {
     path: '**',

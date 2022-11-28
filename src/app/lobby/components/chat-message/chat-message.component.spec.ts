@@ -11,7 +11,9 @@ describe('ChatMessageComponent', () => {
       declarations: [ ChatMessageComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ChatMessageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

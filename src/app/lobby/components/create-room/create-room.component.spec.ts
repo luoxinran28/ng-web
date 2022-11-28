@@ -11,7 +11,9 @@ describe('CreateRoomComponent', () => {
       declarations: [ CreateRoomComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(CreateRoomComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
