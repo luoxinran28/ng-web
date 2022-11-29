@@ -17,7 +17,7 @@
         </div>
 
         <div
-          *ngIf="(rooms$ | async)?.items?.length > 0; else no_rooms"
+          *ngIf="(rooms$ | async)?.items!.length > 0; else no_rooms"
           class="rooms"
         >
           <mat-selection-list
