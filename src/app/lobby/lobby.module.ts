@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { EntranceRoutingModule } from '../entrance/entrance-routing.module';
+import { LobbyRoutingModule } from './lobby-routing.module';
 import { CreateRoomComponent } from './components/create-room/create-room.component';
 import { SelectUsersComponent } from './components/select-users/select-users.component';
 import { ChatRoomComponent } from './components/chat-room/chat-room.component';
@@ -28,7 +28,7 @@ import { MatIconModule } from '@angular/material/icon';
   ],
   imports: [
     CommonModule,
-    EntranceRoutingModule,
+    LobbyRoutingModule,
     MatListModule,
     MatPaginatorModule,
     MatCardModule,
